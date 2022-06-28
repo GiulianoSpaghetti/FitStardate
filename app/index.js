@@ -13,12 +13,12 @@ messaging.peerSocket.onmessage = evt => {
   if (evt.data.key === "gregoriandate" && evt.data.newValue) {
      mydata=JSON.parse(evt.data.newValue);
      mydata=new Date(mydata.name);
-    gregoriandate.text=mydata.toString();
+    gregoriandate.text=mydata.toDateString();
     month=mydata.getMonth()+1;
     if (month<10)
       month="0"+month.toString();
     else
-      month=month.toString().substr(0,1);
+      month=month.toString().substr(0,2);
     stardate.text=mydata.getYear().toString()+month+"."+mydata.getDate().toString();
   }
 };
