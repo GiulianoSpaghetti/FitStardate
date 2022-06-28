@@ -1,7 +1,7 @@
 <svg>
     <image href="background.png" />
-    <text x="0" y="25" class="defaultText">Gregorian Date</text>
-    <text id ="gregoriandate" x="0" y="25%+25" class="defaultText">#gregoriandate</text>
+    <text x="50" y="40" class="defaultText">Gregorian Date</text>
+    <text id ="gregoriandate" x="10" y="25%+25" class="defaultText">#gregoriandate</text>
     <text x="0" y="50%+25" class="defaultText">Star Date</text>
-    <text id ="stardate" x="0" y="75%+25" class="defaultText">#stardate</text>
+    <text id ="stardate" x="25" y="75%+25" class="defaultText">#stardate</text>
 </svg>
