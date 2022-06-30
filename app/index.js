@@ -3,10 +3,10 @@ import { gettext } from "i18n";
 import * as messaging from "messaging";
 
   
-let gregoriandate = document.getElementById('gregoriandate');
-let  stardate = document.getElementById('stardate');
-let mydata=null;
-let month=null;
+var gregoriandate = document.getElementById('gregoriandate');
+var  stardate = document.getElementById('stardate');
+var mydata=null;
+var month=null;
 // Message is received
 messaging.peerSocket.onmessage = evt => {
   console.log(`App received: ${JSON.stringify(evt)}`);
