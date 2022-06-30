@@ -6,7 +6,7 @@ function mySettings(props) {
           label="Data gregoriana (aaa-mm-gg): "
           title="gregoriandate"
           settingsKey="gregoriandate"
-          type="text" 
+          type="date" 
         />
       <Button list label="Elimina impostazioni" onClick={() => props.settingsStorage.clear()} />
       {<Text bold align="center">Creato da Giulio Sorrentino</Text>}
