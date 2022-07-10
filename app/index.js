@@ -7,6 +7,7 @@ var gregoriandate = document.getElementById('gregoriandate');
 var  stardate = document.getElementById('stardate');
 var mydata=null;
 var month=null;
+var year=null;
 // Message is received
 messaging.peerSocket.onmessage = evt => {
   console.log(`App received: ${JSON.stringify(evt)}`);
@@ -15,11 +16,16 @@ messaging.peerSocket.onmessage = evt => {
      mydata=new Date(mydata.name);
     gregoriandate.text=mydata.toDateString();
     month=mydata.getMonth()+1;
+    year=mydata.getYear();
     if (month<10)
       month="0"+month.toString();
     else
       month=month.toString().substr(0,2);
-    stardate.text=mydata.getYear().toString()+month+'.'+mydata.getDate().toString();
+    if (year<9)
+      year="0"+year.toString();
+    else
+      year=year.toString().subStr(year.length-2, year.length);
+    stardate.text=year+month+'.'+mydata.getDate().toString();
   }
 };
 
