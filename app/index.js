@@ -23,8 +23,10 @@ messaging.peerSocket.onmessage = evt => {
       month=month.toString().substr(0,2);
     if (year<9)
       year="0"+year.toString();
-    else
-      year=year.toString().subStr(year.length-2, year.length);
+    else  {
+      year=year.toString();
+      year=year.subStr(year.length-2, year.length);
+    }
     stardate.text=year+month+'.'+mydata.getDate().toString();
   }
 };
