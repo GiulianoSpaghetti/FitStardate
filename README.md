@@ -10,8 +10,5 @@ Open the fitbit aopp in the cell'phone, go to opnions > sense or versa 3 > setti
 or you can donate using the hype card.
 
 # Bibliografia
-https://trekguide.com/Stardates.htm
 
-https://www.w3schools.com/jsref/jsref_substr.asp
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+http://numerone.altervista.org/donazioni.php
